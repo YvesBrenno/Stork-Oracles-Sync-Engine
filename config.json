@@ -1,0 +1,26 @@
+{
+  "accounts": [
+    {
+      "cognito": {
+        "region": "ap-northeast-1",
+        "clientId": "YOUR_CLIENT_ID",
+        "userPoolId": "YOUR_USER_POOL_ID",
+        "username": "YOUR_USERNAME",
+        "password": "YOUR_PASSWORD"
+      },
+      "stork": {
+        "baseURL": "https://...",
+        "authURL": "https://...",
+        "tokenPath": "./tokens_EXAMPLE.json",
+        "intervalSeconds": 10,
+        "userAgent": "YOUR_UA",
+        "origin": "YOUR_ORIGIN"
+      },
+      "proxy": "http://user:pass@proxy:port"
+    }
+  ],
+  "threads": {
+    "maxWorkers": 10,
+    "proxyFile": "./proxies.txt"
+  }
+}
